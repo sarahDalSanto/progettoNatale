@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		372F41B821D51D3B0041FC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372F41B721D51D3B0041FC14 /* AppDelegate.swift */; };
+		372F41BA21D51D3B0041FC14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372F41B921D51D3B0041FC14 /* ViewController.swift */; };
+		372F41BD21D51D3B0041FC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372F41BB21D51D3B0041FC14 /* Main.storyboard */; };
+		372F41BF21D51D3D0041FC14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372F41BE21D51D3D0041FC14 /* Assets.xcassets */; };
+		372F41C221D51D3D0041FC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372F41C021D51D3D0041FC14 /* LaunchScreen.storyboard */; };
+		372F41CD21D51D3E0041FC14 /* progettoNataleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372F41CC21D51D3E0041FC14 /* progettoNataleTests.swift */; };
+		372F41D821D51D3E0041FC14 /* progettoNataleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372F41D721D51D3E0041FC14 /* progettoNataleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		372F41C921D51D3E0041FC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372F41AC21D51D3B0041FC14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372F41B321D51D3B0041FC14;
+			remoteInfo = progettoNatale;
+		};
+		372F41D421D51D3E0041FC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372F41AC21D51D3B0041FC14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372F41B321D51D3B0041FC14;
+			remoteInfo = progettoNatale;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		372F41B421D51D3B0041FC14 /* progettoNatale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progettoNatale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		372F41B721D51D3B0041FC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		372F41B921D51D3B0041FC14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		372F41BC21D51D3B0041FC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		372F41BE21D51D3D0041FC14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		372F41C121D51D3D0041FC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		372F41C321D51D3D0041FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372F41C821D51D3E0041FC14 /* progettoNataleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = progettoNataleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		372F41CC21D51D3E0041FC14 /* progettoNataleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progettoNataleTests.swift; sourceTree = "<group>"; };
+		372F41CE21D51D3E0041FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372F41D321D51D3E0041FC14 /* progettoNataleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = progettoNataleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		372F41D721D51D3E0041FC14 /* progettoNataleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = progettoNataleUITests.swift; sourceTree = "<group>"; };
+		372F41D921D51D3E0041FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		372F41B121D51D3B0041FC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372F41C521D51D3E0041FC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372F41D021D51D3E0041FC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		372F41AB21D51D3B0041FC14 = {
+			isa = PBXGroup;
+			children = (
+				372F41B621D51D3B0041FC14 /* progettoNatale */,
+				372F41CB21D51D3E0041FC14 /* progettoNataleTests */,
+				372F41D621D51D3E0041FC14 /* progettoNataleUITests */,
+				372F41B521D51D3B0041FC14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		372F41B521D51D3B0041FC14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				372F41B421D51D3B0041FC14 /* progettoNatale.app */,
+				372F41C821D51D3E0041FC14 /* progettoNataleTests.xctest */,
+				372F41D321D51D3E0041FC14 /* progettoNataleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		372F41B621D51D3B0041FC14 /* progettoNatale */ = {
+			isa = PBXGroup;
+			children = (
+				372F41B721D51D3B0041FC14 /* AppDelegate.swift */,
+				372F41B921D51D3B0041FC14 /* ViewController.swift */,
+				372F41BB21D51D3B0041FC14 /* Main.storyboard */,
+				372F41BE21D51D3D0041FC14 /* Assets.xcassets */,
+				372F41C021D51D3D0041FC14 /* LaunchScreen.storyboard */,
+				372F41C321D51D3D0041FC14 /* Info.plist */,
+			);
+			path = progettoNatale;
+			sourceTree = "<group>";
+		};
+		372F41CB21D51D3E0041FC14 /* progettoNataleTests */ = {
+			isa = PBXGroup;
+			children = (
+				372F41CC21D51D3E0041FC14 /* progettoNataleTests.swift */,
+				372F41CE21D51D3E0041FC14 /* Info.plist */,
+			);
+			path = progettoNataleTests;
+			sourceTree = "<group>";
+		};
+		372F41D621D51D3E0041FC14 /* progettoNataleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				372F41D721D51D3E0041FC14 /* progettoNataleUITests.swift */,
+				372F41D921D51D3E0041FC14 /* Info.plist */,
+			);
+			path = progettoNataleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		372F41B321D51D3B0041FC14 /* progettoNatale */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372F41DC21D51D3E0041FC14 /* Build configuration list for PBXNativeTarget "progettoNatale" */;
+			buildPhases = (
+				372F41B021D51D3B0041FC14 /* Sources */,
+				372F41B121D51D3B0041FC14 /* Frameworks */,
+				372F41B221D51D3B0041FC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = progettoNatale;
+			productName = progettoNatale;
+			productReference = 372F41B421D51D3B0041FC14 /* progettoNatale.app */;
+			productType = "com.apple.product-type.application";
+		};
+		372F41C721D51D3E0041FC14 /* progettoNataleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372F41DF21D51D3E0041FC14 /* Build configuration list for PBXNativeTarget "progettoNataleTests" */;
+			buildPhases = (
+				372F41C421D51D3E0041FC14 /* Sources */,
+				372F41C521D51D3E0041FC14 /* Frameworks */,
+				372F41C621D51D3E0041FC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372F41CA21D51D3E0041FC14 /* PBXTargetDependency */,
+			);
+			name = progettoNataleTests;
+			productName = progettoNataleTests;
+			productReference = 372F41C821D51D3E0041FC14 /* progettoNataleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		372F41D221D51D3E0041FC14 /* progettoNataleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372F41E221D51D3E0041FC14 /* Build configuration list for PBXNativeTarget "progettoNataleUITests" */;
+			buildPhases = (
+				372F41CF21D51D3E0041FC14 /* Sources */,
+				372F41D021D51D3E0041FC14 /* Frameworks */,
+				372F41D121D51D3E0041FC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372F41D521D51D3E0041FC14 /* PBXTargetDependency */,
+			);
+			name = progettoNataleUITests;
+			productName = progettoNataleUITests;
+			productReference = 372F41D321D51D3E0041FC14 /* progettoNataleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		372F41AC21D51D3B0041FC14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sarah Dal Santo";
+				TargetAttributes = {
+					372F41B321D51D3B0041FC14 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					372F41C721D51D3E0041FC14 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 372F41B321D51D3B0041FC14;
+					};
+					372F41D221D51D3E0041FC14 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 372F41B321D51D3B0041FC14;
+					};
+				};
+			};
+			buildConfigurationList = 372F41AF21D51D3B0041FC14 /* Build configuration list for PBXProject "progettoNatale" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 372F41AB21D51D3B0041FC14;
+			productRefGroup = 372F41B521D51D3B0041FC14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				372F41B321D51D3B0041FC14 /* progettoNatale */,
+				372F41C721D51D3E0041FC14 /* progettoNataleTests */,
+				372F41D221D51D3E0041FC14 /* progettoNataleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		372F41B221D51D3B0041FC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372F41C221D51D3D0041FC14 /* LaunchScreen.storyboard in Resources */,
+				372F41BF21D51D3D0041FC14 /* Assets.xcassets in Resources */,
+				372F41BD21D51D3B0041FC14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372F41C621D51D3E0041FC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372F41D121D51D3E0041FC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		372F41B021D51D3B0041FC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372F41BA21D51D3B0041FC14 /* ViewController.swift in Sources */,
+				372F41B821D51D3B0041FC14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372F41C421D51D3E0041FC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372F41CD21D51D3E0041FC14 /* progettoNataleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372F41CF21D51D3E0041FC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372F41D821D51D3E0041FC14 /* progettoNataleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		372F41CA21D51D3E0041FC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372F41B321D51D3B0041FC14 /* progettoNatale */;
+			targetProxy = 372F41C921D51D3E0041FC14 /* PBXContainerItemProxy */;
+		};
+		372F41D521D51D3E0041FC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372F41B321D51D3B0041FC14 /* progettoNatale */;
+			targetProxy = 372F41D421D51D3E0041FC14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		372F41BB21D51D3B0041FC14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372F41BC21D51D3B0041FC14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		372F41C021D51D3D0041FC14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372F41C121D51D3D0041FC14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		372F41DA21D51D3E0041FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		372F41DB21D51D3E0041FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		372F41DD21D51D3E0041FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = progettoNatale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.progettoNatale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		372F41DE21D51D3E0041FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = progettoNatale/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.progettoNatale;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		372F41E021D51D3E0041FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = progettoNataleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.progettoNataleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/progettoNatale.app/progettoNatale";
+			};
+			name = Debug;
+		};
+		372F41E121D51D3E0041FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = progettoNataleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.progettoNataleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/progettoNatale.app/progettoNatale";
+			};
+			name = Release;
+		};
+		372F41E321D51D3E0041FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = progettoNataleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.progettoNataleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = progettoNatale;
+			};
+			name = Debug;
+		};
+		372F41E421D51D3E0041FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = progettoNataleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.progettoNataleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = progettoNatale;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		372F41AF21D51D3B0041FC14 /* Build configuration list for PBXProject "progettoNatale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372F41DA21D51D3E0041FC14 /* Debug */,
+				372F41DB21D51D3E0041FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372F41DC21D51D3E0041FC14 /* Build configuration list for PBXNativeTarget "progettoNatale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372F41DD21D51D3E0041FC14 /* Debug */,
+				372F41DE21D51D3E0041FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372F41DF21D51D3E0041FC14 /* Build configuration list for PBXNativeTarget "progettoNataleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372F41E021D51D3E0041FC14 /* Debug */,
+				372F41E121D51D3E0041FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372F41E221D51D3E0041FC14 /* Build configuration list for PBXNativeTarget "progettoNataleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372F41E321D51D3E0041FC14 /* Debug */,
+				372F41E421D51D3E0041FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 372F41AC21D51D3B0041FC14 /* Project object */;
+}
