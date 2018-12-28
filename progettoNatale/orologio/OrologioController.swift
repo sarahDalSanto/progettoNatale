@@ -12,9 +12,15 @@ class OrologioController: UIViewController {
 
     @IBOutlet weak var labelWatch: UILabel!
     let currentDateTime = Date()
-    var timer = Timer()
+    var timer : Timer!
     let date = Date() // save date, so all components use the same date
     let calendar = Calendar.current // or e.g. Calendar(identifier: .persian)
+    
+    @IBOutlet weak var clock: UIImageView!
+    @IBOutlet weak var mins: UIImageView!
+    @IBOutlet weak var hours: UIImageView!
+    
+    @IBOutlet weak var secs: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,32 +32,59 @@ class OrologioController: UIViewController {
         
         labelWatch.text = "h \(hour) m \(minute) s \(second)"
         
-        scheduledTimerWithTimeInterval()
+        //scheduledTimerWithTimeInterval()
+        clockTimer()
     }
     
 
-    func scheduledTimerWithTimeInterval(){
-        // Scheduling timer to Call the function "updateCounting" with the interval of 1 seconds
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounting), userInfo: nil, repeats: true)
-    }
     
-    @objc func updateCounting(){
-        let hour = calendar.component(.hour, from: date)
-        let minute = calendar.component(.minute, from: date)
-        let second = calendar.component(.second, from: date)
+    func clockTimer() {
         
-        labelWatch.text = "h \(hour) m \(minute) s \(second)"
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            if timer.isValid {
+                
+                let date = Date() // save date, so all components use the same date
+                let calendar = Calendar.current // or e.g. Calendar(identifier: .persian)
+                
+                let hour = calendar.component(.hour, from: date)
+                let minute = calendar.component(.minute, from: date)
+                let second = calendar.component(.second, from: date)
+                
+                self.labelWatch.text = "h \(hour) m \(minute) s \(second)"
+                //print("h \(hour) m \(minute) s \(second)")
+                
+                self.mins.transform = CGAffineTransform(rotationAngle: CGFloat(minute*6)*CGFloat((Double.pi/180)))
+                self.hours.transform = CGAffineTransform(rotationAngle: CGFloat(hour*30)*CGFloat((Double.pi/180)))
+                self.secs.transform = CGAffineTransform(rotationAngle: CGFloat(second*6)*CGFloat((Double.pi/180)))
+                
+            }else{
+                print("TUTTO ROTTOOOOOOO")
+            }
+        }
     }
-    
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+}
+
+public extension UIImage {
+    func rotate(radians: CGFloat) -> UIImage {
+        let rotatedSize = CGRect(origin: .zero, size: size)
+            .applying(CGAffineTransform(rotationAngle: CGFloat(radians)))
+            .integral.size
+        UIGraphicsBeginImageContext(rotatedSize)
+        if let context = UIGraphicsGetCurrentContext() {
+            let origin = CGPoint(x: rotatedSize.width / 2.0,
+                                 y: rotatedSize.height / 2.0)
+            context.translateBy(x: origin.x, y: origin.y)
+            context.rotate(by: radians)
+            draw(in: CGRect(x: -origin.x, y: -origin.y,
+                            width: size.width, height: size.height))
+            let rotatedImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            return rotatedImage ?? self
+        }
+        
+        return self
     }
-    */
-
 }
