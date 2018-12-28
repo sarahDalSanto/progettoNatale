@@ -11,9 +11,15 @@ import Firebase
 
 class Firebase : NSObject{
     
-    // Use Firebase library to configure APIs
-    //FirebaseApp.configure()
-    //self.remoteConfig = RemoteConfig.remoteConfig()
+    
+    
+    static func initFirebase() {
+        FirebaseApp.configure()
+       // self.remoteConfig = RemoteConfig.remoteConfig()
+    }
+    
+   
+    
     
     
     

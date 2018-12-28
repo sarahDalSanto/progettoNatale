@@ -11,7 +11,7 @@ import UIKit
 class OrologioController: UIViewController {
 
     @IBOutlet weak var labelWatch: UILabel!
-    let currentDateTime = Date()
+
     var timer : Timer!
     let date = Date() // save date, so all components use the same date
     let calendar = Calendar.current // or e.g. Calendar(identifier: .persian)
