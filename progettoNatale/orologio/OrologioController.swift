@@ -53,9 +53,16 @@ class OrologioController: UIViewController {
                 self.labelWatch.text = "h \(hour) m \(minute) s \(second)"
                 //print("h \(hour) m \(minute) s \(second)")
                 
-                self.mins.transform = CGAffineTransform(rotationAngle: CGFloat(minute*6)*CGFloat((Double.pi/180)))
+                
+                UIView.animate(withDuration: 0.8, animations: {
+                    self.mins.transform = CGAffineTransform(rotationAngle: CGFloat(minute*6)*CGFloat((Double.pi/180)))
+                    self.hours.transform = CGAffineTransform(rotationAngle: CGFloat(hour*30)*CGFloat((Double.pi/180)))
+                    self.secs.transform = CGAffineTransform(rotationAngle: CGFloat(second*6)*CGFloat((Double.pi/180)))
+                })
+                
+                /*self.mins.transform = CGAffineTransform(rotationAngle: CGFloat(minute*6)*CGFloat((Double.pi/180)))
                 self.hours.transform = CGAffineTransform(rotationAngle: CGFloat(hour*30)*CGFloat((Double.pi/180)))
-                self.secs.transform = CGAffineTransform(rotationAngle: CGFloat(second*6)*CGFloat((Double.pi/180)))
+                self.secs.transform = CGAffineTransform(rotationAngle: CGFloat(second*6)*CGFloat((Double.pi/180)))*/
                 
             }else{
                 print("TUTTO ROTTOOOOOOO")

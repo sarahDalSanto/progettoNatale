@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -192,34 +192,35 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5um-Bs-Ifn">
                                 <rect key="frame" x="83" y="229" width="208" height="208"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8n8-fM-Afa">
+                                        <rect key="frame" x="102" y="54" width="4" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHL-wR-dT9">
+                                        <rect key="frame" x="102" y="71" width="4" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GH-ez-wYi">
+                                        <rect key="frame" x="102" y="54" width="4" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.69874884719999997" green="0.84125239669999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8n8-fM-Afa">
-                                <rect key="frame" x="183.5" y="243.5" width="8" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MD0-0V-uO0">
-                                <rect key="frame" x="183" y="276.5" width="9" height="80"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="9" id="ACB-Mk-0rX"/>
-                                    <constraint firstAttribute="height" constant="80" id="Gas-Px-imK"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="MD0-0V-uO0" firstAttribute="centerY" secondItem="eRS-Pc-ajg" secondAttribute="centerY" id="AcG-Uy-OAg"/>
-                            <constraint firstItem="MD0-0V-uO0" firstAttribute="centerX" secondItem="eRS-Pc-ajg" secondAttribute="centerX" id="BIC-Ir-CJ9"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uL4-yB-74l"/>
                     </view>
                     <connections>
                         <outlet property="clockLabel" destination="Ny2-zD-Owi" id="OOy-1k-ruF"/>
                         <outlet property="clockView" destination="5um-Bs-Ifn" id="KRb-cy-Ix3"/>
-                        <outlet property="hours" destination="MD0-0V-uO0" id="7T5-Im-bY7"/>
+                        <outlet property="hours" destination="lHL-wR-dT9" id="PWn-ch-r40"/>
                         <outlet property="mins" destination="8n8-fM-Afa" id="Ubm-xR-fRX"/>
+                        <outlet property="secs" destination="7GH-ez-wYi" id="pKz-3i-Fa8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMB-vm-mN5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -246,9 +247,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="416" height="416"/>
-        <image name="hours" width="416" height="416"/>
-        <image name="mins" width="416" height="416"/>
-        <image name="secs" width="416" height="416"/>
+        <image name="bg" width="208" height="208"/>
+        <image name="hours" width="208" height="208"/>
+        <image name="mins" width="208" height="208"/>
+        <image name="secs" width="208" height="208"/>
     </resources>
 </document>

@@ -11,6 +11,7 @@ import UIKit
 class OrologioController2: UIViewController {
     
     
+    @IBOutlet weak var secs: UIView!
     @IBOutlet weak var hours: UIView!
     @IBOutlet weak var mins: UIView!
     @IBOutlet weak var clockLabel: UILabel!
@@ -51,7 +52,14 @@ class OrologioController2: UIViewController {
                 self.clockLabel.text = "h \(hour) m \(minute) s \(second)"
                 
                 //at least i tried :')
-                // self.mins.transform = CGAffineTransform(rotationAngle: CGFloat(minute*6)*CGFloat((Double.pi/180)))
+                self.mins.layer.anchorPoint = CGPoint(x: 0, y: 1)
+                self.mins.transform = CGAffineTransform(rotationAngle: CGFloat(minute*6)*CGFloat((Double.pi/180)))
+                
+                self.hours.layer.anchorPoint = CGPoint(x: 0, y: 1)
+                self.hours.transform = CGAffineTransform(rotationAngle: CGFloat(hour*30)*CGFloat((Double.pi/180)))
+                
+                self.secs.layer.anchorPoint = CGPoint(x: 0, y: 1)
+                self.secs.transform = CGAffineTransform(rotationAngle: CGFloat(second*6)*CGFloat((Double.pi/180)))
                 
             }else{
                 print("TUTTO ROTTOOOOOOO")
