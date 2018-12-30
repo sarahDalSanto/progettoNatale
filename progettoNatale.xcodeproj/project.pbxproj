@@ -26,7 +26,7 @@
 		3752929F21D678EF00D61D8F /* OrologioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3752929E21D678EF00D61D8F /* OrologioController.swift */; };
 		375292A321D6A35700D61D8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 375292A221D6A35700D61D8F /* GoogleService-Info.plist */; };
 		375292A521D6A8EA00D61D8F /* OrologioController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375292A421D6A8EA00D61D8F /* OrologioController2.swift */; };
-		3754215721D55CFA00B631A8 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754215621D55CFA00B631A8 /* Firebase.swift */; };
+		3754215721D55CFA00B631A8 /* FirebaseRemoteConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754215621D55CFA00B631A8 /* FirebaseRemoteConf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +73,7 @@
 		3752929E21D678EF00D61D8F /* OrologioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrologioController.swift; sourceTree = "<group>"; };
 		375292A221D6A35700D61D8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		375292A421D6A8EA00D61D8F /* OrologioController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrologioController2.swift; sourceTree = "<group>"; };
-		3754215621D55CFA00B631A8 /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		3754215621D55CFA00B631A8 /* FirebaseRemoteConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConf.swift; sourceTree = "<group>"; };
 		4903927124C6588A3B1A719B /* Pods-progettoNatale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progettoNatale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-progettoNatale/Pods-progettoNatale.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +142,6 @@
 				372F41F621D54DA50041FC14 /* pageController */,
 				372F41EB21D549D10041FC14 /* immagini */,
 				372F41B721D51D3B0041FC14 /* AppDelegate.swift */,
-				372F41B921D51D3B0041FC14 /* ViewController.swift */,
 				372F41BB21D51D3B0041FC14 /* Main.storyboard */,
 				372F41BE21D51D3D0041FC14 /* Assets.xcassets */,
 				372F41C021D51D3D0041FC14 /* LaunchScreen.storyboard */,
@@ -204,7 +203,8 @@
 		3754215521D55CDC00B631A8 /* remoteConfiguration */ = {
 			isa = PBXGroup;
 			children = (
-				3754215621D55CFA00B631A8 /* Firebase.swift */,
+				3754215621D55CFA00B631A8 /* FirebaseRemoteConf.swift */,
+				372F41B921D51D3B0041FC14 /* ViewController.swift */,
 			);
 			path = remoteConfiguration;
 			sourceTree = "<group>";
@@ -412,7 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3754215721D55CFA00B631A8 /* Firebase.swift in Sources */,
+				3754215721D55CFA00B631A8 /* FirebaseRemoteConf.swift in Sources */,
 				3752929F21D678EF00D61D8F /* OrologioController.swift in Sources */,
 				372F41BA21D51D3B0041FC14 /* ViewController.swift in Sources */,
 				372F41B821D51D3B0041FC14 /* AppDelegate.swift in Sources */,
