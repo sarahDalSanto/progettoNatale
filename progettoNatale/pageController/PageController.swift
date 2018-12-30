@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import MaterialComponents.MaterialPageControl
 
 class PageController: UIViewController, UIScrollViewDelegate {
 
