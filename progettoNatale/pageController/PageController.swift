@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MaterialComponents.MaterialPageControl
 
 class PageController: UIViewController, UIScrollViewDelegate {
 
@@ -20,6 +20,7 @@ class PageController: UIViewController, UIScrollViewDelegate {
 
         // Do any additional setup after loading the view.
         scrollView.delegate = self //per l'animazione
+        
         
         slides = createSlides()
         setupSlideScrollView(slides: slides)
@@ -125,5 +126,8 @@ class PageController: UIViewController, UIScrollViewDelegate {
             slides[4].imageView.transform = CGAffineTransform(scaleX: percentOffset.x, y: percentOffset.x)
         }
     }
+    
+    
+   
 
 }

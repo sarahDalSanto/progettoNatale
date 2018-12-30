@@ -32,7 +32,6 @@ class OrologioController: UIViewController {
         
         labelWatch.text = "h \(hour) m \(minute) s \(second)"
         
-        //scheduledTimerWithTimeInterval()
         clockTimer()
     }
     
