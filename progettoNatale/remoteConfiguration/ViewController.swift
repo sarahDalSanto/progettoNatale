@@ -7,47 +7,32 @@
 //
 
 import UIKit
-import Firebase
-import FirebaseRemoteConfig
 import Lobster
 
 class ViewController: UIViewController {
 
-    var remoteConfig : RemoteConfig!
+    @IBOutlet weak var buttonOutlet: UIButton!
+    
     
     @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       // Lobster.shared[.welcomeMessage] = "Benvenuto!"
-        Lobster.shared.fetch { [weak self] _ in
-            self?.textField.text = Lobster.shared[.welcomeMessage]
-        }
-            print(Lobster.shared[.welcomeMessage], "CCCCCCCCCCCCCCCCCCC")
+        //Lobster.shared[.welcomeMessage] = "Benvenuto!"
+        //Lobster.shared.fetch { [weak self] _ in
+        //    self?.textField.text = Lobster.shared[.welcomeMessage]
+        //}
+        var title = FRC().getStrings(name: "welcome_message")
+        self.textField.text = title
+        var button = FRC().getStrings(name: "button_message")
+        buttonOutlet.setTitle(button, for: .normal)
         
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        
-        remoteConfig = RemoteConfig.remoteConfig()
-        remoteConfig.configSettings = RemoteConfigSettings(developerModeEnabled: true)
-        //remoteConfig.setDefaults(fromPlist: "RemoteConfigDefaults")
-        remoteConfig.fetch(withExpirationDuration: TimeInterval(20)) { (status, error) -> Void in
-            if status == .success {
-                print("Config fetched!")
-                self.remoteConfig.activateFetched()
-            } else {
-                print("Config not fetched")
-                print("Error: \(error?.localizedDescription ?? "No error available.")")
-            }
-            
-            var welcomeMessage = self.remoteConfig["welcome_message"].stringValue
-            self.textField.text = welcomeMessage
-            print("AAAAAAAAAAAAAAAAA", welcomeMessage,self.remoteConfig["welcome_message"])
-        }
-    }
     
+    
+    /*
     override func viewDidAppear(_ animated: Bool) {
         FirebaseRemoteConf().fetchRemoteConfig(completion: {result in
             if result {
@@ -55,7 +40,7 @@ class ViewController: UIViewController {
             }
             
         })
-    }
+    }*/
 
 }
 

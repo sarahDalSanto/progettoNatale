@@ -16,6 +16,7 @@ class OrologioController2: UIViewController {
     @IBOutlet weak var mins: UIView!
     @IBOutlet weak var clockLabel: UILabel!
     @IBOutlet weak var clockView: UIView!
+    @IBOutlet weak var buttonTabBar: UITabBarItem!
     
     var timer : Timer!
     let date = Date() // save date, so all components use the same date
@@ -29,6 +30,9 @@ class OrologioController2: UIViewController {
         let hour = calendar.component(.hour, from: date)
         let minute = calendar.component(.minute, from: date)
         let second = calendar.component(.second, from: date)
+        
+        var title = FRC().getStrings(name: "item2_tabBar")
+        buttonTabBar.title = title
         
         clockLabel.text = "h \(hour) m \(minute) s \(second)"
         clockView.layer.cornerRadius = 104

@@ -31,7 +31,7 @@ class FirebaseRemoteConf : NSObject{
     
     func loadConstants(completion: @escaping (_ result: Bool)->Void){
         let stringa = Lobster.shared[.welcomeMessage]
-        print(stringa, "BBBBBBBBBBBBBBBBBBBBB")
+        
         completion(true)
     }
     

@@ -16,6 +16,7 @@ class OrologioController: UIViewController {
     let date = Date() // save date, so all components use the same date
     let calendar = Calendar.current // or e.g. Calendar(identifier: .persian)
     
+    @IBOutlet weak var buttonTabBar: UITabBarItem!
     @IBOutlet weak var clock: UIImageView!
     @IBOutlet weak var mins: UIImageView!
     @IBOutlet weak var hours: UIImageView!
@@ -29,6 +30,9 @@ class OrologioController: UIViewController {
         let hour = calendar.component(.hour, from: date)
         let minute = calendar.component(.minute, from: date)
         let second = calendar.component(.second, from: date)
+        
+        var title = FRC().getStrings(name: "item1_tabBar")
+        buttonTabBar.title = title
         
         labelWatch.text = "h \(hour) m \(minute) s \(second)"
         

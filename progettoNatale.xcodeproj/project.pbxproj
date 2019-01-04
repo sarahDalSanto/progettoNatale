@@ -27,6 +27,8 @@
 		375292A321D6A35700D61D8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 375292A221D6A35700D61D8F /* GoogleService-Info.plist */; };
 		375292A521D6A8EA00D61D8F /* OrologioController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375292A421D6A8EA00D61D8F /* OrologioController2.swift */; };
 		3754215721D55CFA00B631A8 /* FirebaseRemoteConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754215621D55CFA00B631A8 /* FirebaseRemoteConf.swift */; };
+		37775A2221DFC23F009F637B /* FRC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37775A2121DFC23F009F637B /* FRC.swift */; };
+		37775A2421DFCC91009F637B /* clockk.png in Resources */ = {isa = PBXBuildFile; fileRef = 37775A2321DFCC90009F637B /* clockk.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		375292A221D6A35700D61D8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		375292A421D6A8EA00D61D8F /* OrologioController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrologioController2.swift; sourceTree = "<group>"; };
 		3754215621D55CFA00B631A8 /* FirebaseRemoteConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRemoteConf.swift; sourceTree = "<group>"; };
+		37775A2121DFC23F009F637B /* FRC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRC.swift; sourceTree = "<group>"; };
+		37775A2321DFCC90009F637B /* clockk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockk.png; sourceTree = "<group>"; };
 		4903927124C6588A3B1A719B /* Pods-progettoNatale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-progettoNatale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-progettoNatale/Pods-progettoNatale.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +176,7 @@
 		372F41EB21D549D10041FC14 /* immagini */ = {
 			isa = PBXGroup;
 			children = (
+				37775A2321DFCC90009F637B /* clockk.png */,
 				372F41EC21D549DF0041FC14 /* image3.jpeg */,
 				372F41EE21D549E70041FC14 /* image2.jpeg */,
 				372F41F021D549EF0041FC14 /* image5.jpeg */,
@@ -205,6 +210,7 @@
 			children = (
 				3754215621D55CFA00B631A8 /* FirebaseRemoteConf.swift */,
 				372F41B921D51D3B0041FC14 /* ViewController.swift */,
+				37775A2121DFC23F009F637B /* FRC.swift */,
 			);
 			path = remoteConfiguration;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 				372F41F321D54A0C0041FC14 /* image4.jpeg in Resources */,
 				372F41BF21D51D3D0041FC14 /* Assets.xcassets in Resources */,
 				372F41EF21D549E70041FC14 /* image2.jpeg in Resources */,
+				37775A2421DFCC91009F637B /* clockk.png in Resources */,
 				372F41F121D549EF0041FC14 /* image5.jpeg in Resources */,
 				372F41BD21D51D3B0041FC14 /* Main.storyboard in Resources */,
 				375292A321D6A35700D61D8F /* GoogleService-Info.plist in Resources */,
@@ -419,6 +426,7 @@
 				372F41E621D5200E0041FC14 /* PageController.swift in Sources */,
 				372F41E821D541C00041FC14 /* Slide.swift in Sources */,
 				375292A521D6A8EA00D61D8F /* OrologioController2.swift in Sources */,
+				37775A2221DFC23F009F637B /* FRC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

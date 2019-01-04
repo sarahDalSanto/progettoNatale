@@ -11,8 +11,8 @@ import UIKit
 class PageController: UIViewController, UIScrollViewDelegate {
 
      var slides:[Slide] = [];
-    var testo = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
-    
+    //var testo = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
+    var testo = FRC().getStrings(name: "testo_page_controller")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,20 +20,22 @@ class PageController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
         scrollView.delegate = self //per l'animazione
         
-        
         slides = createSlides()
         setupSlideScrollView(slides: slides)
         
         pageControl.numberOfPages = slides.count
         pageControl.currentPage = 0
         view.bringSubviewToFront(pageControl)
+        
+        var button = FRC().getStrings(name: "button_avanti")
+        buttonAvanti.setTitle(button, for: .normal)
     }
     
+    
+    
     @IBOutlet weak var pageControl: UIPageControl!
-    
     @IBOutlet weak var scrollView: UIScrollView!
-   
-    
+    @IBOutlet weak var buttonAvanti: UIButton!
     
     func createSlides() -> [Slide] {
         
