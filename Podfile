@@ -9,7 +9,6 @@ target 'progettoNatale' do
 
   pod 'Firebase/Core'
 pod 'Firebase/RemoteConfig'
-pod 'MaterialComponents/PageControl'
-pod 'Lobster'
+
 
 end

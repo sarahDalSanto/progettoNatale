@@ -5,7 +5,7 @@
 //  Created by Sarah Dal Santo on 27/12/18.
 //  Copyright © 2018 Sarah Dal Santo. All rights reserved.
 //
-
+/*
 import Foundation
 import Lobster
 
@@ -43,3 +43,4 @@ class FirebaseRemoteConf : NSObject{
     
     
 }
+ */
