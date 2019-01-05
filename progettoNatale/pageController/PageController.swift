@@ -27,8 +27,10 @@ class PageController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         view.bringSubviewToFront(pageControl)
         
-        var button = FRC().getStrings(name: "button_avanti")
+        let button = FRC().getStrings(name: "button_avanti")
         buttonAvanti.setTitle(button, for: .normal)
+        let color = FRC().getColors()
+        buttonAvanti.backgroundColor = color
     }
     
     

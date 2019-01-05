@@ -25,7 +25,7 @@
                                     <segue destination="q1H-qO-CzB" kind="show" id="TRY-vT-ZOY"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-dY-pgP">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="c" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8g-dY-pgP">
                                 <rect key="frame" x="10" y="100" width="355" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5mY-yc-AvE"/>
@@ -193,17 +193,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5um-Bs-Ifn">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5um-Bs-Ifn">
                                 <rect key="frame" x="83.5" y="229.5" width="208" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8n8-fM-Afa">
-                                        <rect key="frame" x="102" y="65" width="4" height="80"/>
+                                        <rect key="frame" x="100" y="65" width="4" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lHL-wR-dT9">
-                                        <rect key="frame" x="102" y="71" width="4" height="65"/>
+                                        <rect key="frame" x="100" y="71" width="4" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -214,19 +213,20 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.69874884719999997" green="0.84125239669999996" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clockk.png" translatesAutoresizingMaskIntoConstraints="NO" id="Es5-Nt-JPl">
-                                <rect key="frame" x="72.5" y="218.5" width="230" height="230"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="Ci8-XF-mIm"/>
-                                    <constraint firstAttribute="width" constant="230" id="bvM-al-awO"/>
+                                    <constraint firstAttribute="height" constant="208" id="aA0-Md-OMU"/>
+                                    <constraint firstAttribute="width" constant="208" id="nZk-EZ-vYx"/>
                                 </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clockk.png" translatesAutoresizingMaskIntoConstraints="NO" id="Es5-Nt-JPl">
+                                <rect key="frame" x="72.5" y="218.5" width="230" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Es5-Nt-JPl" firstAttribute="centerY" secondItem="eRS-Pc-ajg" secondAttribute="centerY" id="G7n-o6-Xg0"/>
-                            <constraint firstItem="Es5-Nt-JPl" firstAttribute="centerX" secondItem="eRS-Pc-ajg" secondAttribute="centerX" id="thp-Fj-dry"/>
+                            <constraint firstItem="5um-Bs-Ifn" firstAttribute="centerY" secondItem="eRS-Pc-ajg" secondAttribute="centerY" id="LCD-RN-Lbb"/>
+                            <constraint firstItem="5um-Bs-Ifn" firstAttribute="centerX" secondItem="eRS-Pc-ajg" secondAttribute="centerX" id="yeR-k9-eya"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uL4-yB-74l"/>
                     </view>

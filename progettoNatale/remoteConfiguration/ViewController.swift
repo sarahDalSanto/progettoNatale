@@ -23,10 +23,12 @@ class ViewController: UIViewController {
         //Lobster.shared.fetch { [weak self] _ in
         //    self?.textField.text = Lobster.shared[.welcomeMessage]
         //}
-        var title = FRC().getStrings(name: "welcome_message")
+        let title = FRC().getStrings(name: "welcome_message")
         self.textField.text = title
-        var button = FRC().getStrings(name: "button_message")
+        let button = FRC().getStrings(name: "button_message")
         buttonOutlet.setTitle(button, for: .normal)
+        let color = FRC().getColors()
+        buttonOutlet.backgroundColor = color
         
     }
 
